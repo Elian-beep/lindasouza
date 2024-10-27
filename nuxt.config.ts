@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
+  modules: ['@nuxtjs/tailwindcss'],
   css: ['~/assets/css/tailwind.css', '~/assets/css/global.css'],
   devServer: {
     port: 8080,
@@ -12,7 +13,7 @@ export default defineNuxtConfig({
       title: 'Linda Souza',
       meta: [{}],
       link: [
-        { rel: '', type: 'image/png', href: '' }
+        { rel: 'icon', type: 'image/png', href: '/logo.png' }
       ]
     }
   }

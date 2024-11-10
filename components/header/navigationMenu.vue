@@ -17,7 +17,7 @@ watch(appStore, () => {
 </script>
 
 <template>
-    <div class="flex justify-between">
+    <div class="content flex justify-between">
         <picture>
             <source srcset="../../assets/icons/logo_desktop.svg" media="(min-width: 768px)" />
 
@@ -51,6 +51,10 @@ watch(appStore, () => {
 </template>
 
 <style scoped>
+.content{
+    @apply md:max-w-[1184px] md:mx-auto;
+}
+
 .custom_menu_mobile {
     @apply fixed top-0 right-0 pt-[50%] h-full bg-white w-72 p-4 z-30 sm:hidden;
 }

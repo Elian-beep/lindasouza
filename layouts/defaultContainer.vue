@@ -6,7 +6,7 @@ const appStore = useApplicationStore();
 </script>
 
 <template>
-    <div class="container px-6 py-10 min-h-screen relative z-10 ">
+    <div class="container px-6 py-10 min-h-screen relative z-10 sm:mx-auto sm:max-w-[1184px]">
         <NavigationMenu />
         <NuxtPage />
 
@@ -16,7 +16,11 @@ const appStore = useApplicationStore();
 
 <style scoped lang="css">
 .container {
-    background: linear-gradient(180deg, #FFF0E1 0%, rgba(255, 240, 225, 0.00) 100%), linear-gradient(0deg, #FFF0E1 0%, rgba(255, 240, 225, 0.00) 100%);
+    background: 
+        linear-gradient(180deg, #FFF0E1 0%, rgba(255, 240, 225, 0.00) 100%), 
+        linear-gradient(0deg, #FFF0E1 0%, rgba(255, 240, 225, 0.00) 100%);
+    width: 100vw;
+    max-width: 100vw;
 }
 
 .overlay {
